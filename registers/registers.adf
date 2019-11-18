@@ -1,0 +1,119 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+
+[Configurations]
+compile=registers
+
+[Library]
+registers=.\registers\registers.lib
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+registers=.
+Active_lib=
+
+[SpecTracer]
+WindowVisible=0
+
+[HierarchyViewer]
+HierarchyInformation=digest_generation_example_tb|tb|0 johnson_counter_tb|tb|0 lfsr_external_tb|tb|0 lfsr_internal_tb|tb|0 shift_register_tb|tb|0 signature_analyzer_tb|tb|0 
+ShowHide=ShowTopLevel
+Selected=
+
+[Groups]
+structural_elements=1
+storage_registers=1
+storage_registers\tb=1
+shift_register=1
+shift_register\tb=1
+johnson_counter=1
+johnson_counter\tb=1
+lfsr=1
+lfsr\tb=1
+signature_analyzer=1
+signature_analyzer\tb=1
+digest_generation_example=1
+digest_generation_example\tb=1
+
+[Files]
+structural_elements/andn.vhd=-1
+structural_elements/fdce.vhd=-1
+structural_elements/ld.vhd=-1
+storage_registers/async_storage_register.vhd=-1
+storage_registers/sync_storage_register.vhd=-1
+storage_registers\tb/sync_storage_register_tb_runtest.do=-1
+storage_registers\tb/sync_storage_register_tb.vhd=-1
+storage_registers\tb/async_storage_register_tb.vhd=-1
+storage_registers\tb/async_storage_register_tb_runtest.do=-1
+shift_register/shift_register.vhd=-1
+shift_register\tb/shift_register_tb_runtest.do=-1
+shift_register\tb/shift_register_tb.vhd=-1
+johnson_counter/johnson_counter.vhd=-1
+johnson_counter\tb/johnson_counter_tb_runtest.do=-1
+johnson_counter\tb/johnson_counter_tb.vhd=-1
+lfsr/lfsr_external.vhd=-1
+lfsr/lfsr_internal.vhd=-1
+lfsr\tb/lfsr_internal_tb.vhd=-1
+lfsr\tb/lfsr_internal_tb_runtest.do=-1
+lfsr\tb/lfsr_external_tb_runtest.do=-1
+lfsr\tb/lfsr_external_tb.vhd=-1
+signature_analyzer/signature_analyzer.vhd=-1
+signature_analyzer\tb/signature_analyzer_tb_runtest.do=-1
+signature_analyzer\tb/signature_analyzer_tb.vhd=-1
+digest_generation_example/digest_generation_example.vhd=-1
+digest_generation_example\tb/digest_generation_example_tb_runtest.do=-1
+digest_generation_example\tb/digest_generation_example_tb.vhd=-1
+
+[Files.Data]
+.\src\structural_elements\andn.vhd=VHDL Source Code
+.\src\structural_elements\fdce.vhd=VHDL Source Code
+.\src\structural_elements\ld.vhd=VHDL Source Code
+.\src\storage_registers\async_storage_register.vhd=VHDL Source Code
+.\src\storage_registers\sync_storage_register.vhd=VHDL Source Code
+.\src\storage_registers\tb\sync_storage_register_tb_runtest.do=Macro
+.\src\storage_registers\tb\sync_storage_register_tb.vhd=VHDL Source Code
+.\src\storage_registers\tb\async_storage_register_tb.vhd=VHDL Source Code
+.\src\storage_registers\tb\async_storage_register_tb_runtest.do=Macro
+.\src\shift_register\shift_register.vhd=VHDL Source Code
+.\src\shift_register\tb\shift_register_tb_runtest.do=Macro
+.\src\shift_register\tb\shift_register_tb.vhd=VHDL Source Code
+.\src\johnson_counter\johnson_counter.vhd=VHDL Source Code
+.\src\johnson_counter\tb\johnson_counter_tb_runtest.do=Macro
+.\src\johnson_counter\tb\johnson_counter_tb.vhd=VHDL Source Code
+.\src\lfsr\lfsr_external.vhd=VHDL Source Code
+.\src\lfsr\lfsr_internal.vhd=VHDL Source Code
+.\src\lfsr\tb\lfsr_internal_tb.vhd=VHDL Source Code
+.\src\lfsr\tb\lfsr_internal_tb_runtest.do=Macro
+.\src\lfsr\tb\lfsr_external_tb_runtest.do=Macro
+.\src\lfsr\tb\lfsr_external_tb.vhd=VHDL Source Code
+.\src\signature_analyzer\signature_analyzer.vhd=VHDL Source Code
+.\src\signature_analyzer\tb\signature_analyzer_tb_runtest.do=Macro
+.\src\signature_analyzer\tb\signature_analyzer_tb.vhd=VHDL Source Code
+.\src\digest_generation_example\digest_generation_example.vhd=VHDL Source Code
+.\src\digest_generation_example\tb\digest_generation_example_tb_runtest.do=Macro
+.\src\digest_generation_example\tb\digest_generation_example_tb.vhd=VHDL Source Code
+
