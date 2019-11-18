@@ -1,0 +1,26 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity lfsr_external is
+	generic (N: integer := 9);
+	port (
+		LS, CLK: in std_logic;
+		Pin: in std_logic_vector(N - 1 downto 0);
+		Pout: out std_logic_vector(N - 1 downto 0)
+	);
+end lfsr_external;
+
+architecture behavioral of lfsr_external is
+	signal StoredValues: std_logic_vector(N - 1 downto 0);
+begin
+	process (LS, CLK)
+	begin
+		if LS = '0' then
+			StoredValues <= Pin;
+		elsif rising_edge(CLK) then
+			StoredValues <= (StoredValues(0) xor StoredValues(N - 1) xor StoredValues(N - 7)) & StoredValues(N - 1 downto 1);
+		end if;				    
+	end process;
+	
+	Pout <= StoredValues;
+end behavioral;
